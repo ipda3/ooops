@@ -1,0 +1,50 @@
+/* Start Login Section */
+
+.login {
+    padding:60px 0;
+    background-color:#EEE;
+    .login-box {
+        border:1px solid #ccc;
+        background-color:#fff;
+        box-shadow: 1px 1px 1px 1px #ccc;
+        border-radius:15px;
+        overflow: hidden;
+        .login-img {
+            background-image: linear-gradient(to bottom, $red_color, $orange_color);
+            padding: 80px 0;
+            img {
+                width: 70%;
+                margin: auto;
+                display: block;
+            }
+        }
+        .login-content {
+            padding: 80px 0;
+            color:#fff;
+            input[type="text"], input[type="password"] {
+                width: 80%;
+                margin: auto;                
+                border-radius: 20px;
+                padding: 20px;
+                background: none;
+                margin-bottom: 25px;
+                background-color:$red_color;
+                box-shadow: none;
+                border:1px solid $red_color;
+                color:#fff !important;
+            }
+        }
+        .security {      
+            margin:20px 0;
+            a {
+                color:$red_color;
+                &:last-of-type{
+                    float: right;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+/* End Login Section */

@@ -1,0 +1,41 @@
+/* Start Speacial Ads */
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    .select-box {
+        flex: 1;
+        position: relative;
+        margin:10px;
+        border-radius:30px;
+        overflow: hidden;
+        i {
+            position: absolute;
+            top: 15px;
+            right: 17px;
+            color:$orange_color;
+        }
+        select {
+            -webkit-appearance: none;
+            color:#999
+        }
+    }
+}
+/* Pagination */
+.pages {
+    .pagination {
+        li {
+            a {
+                margin: 0 3px;
+                padding: 10px 15px;
+                border-radius: 9px;
+                background-color: $red_color;
+                color:#fff;
+                border:1px solid $red_color;
+                border-radius:5px;
+            }
+        }
+    }
+}
+
+/* End Speacial Ads */

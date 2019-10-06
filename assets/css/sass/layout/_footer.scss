@@ -1,0 +1,89 @@
+footer {
+    background-color:#d63031;
+    color:#fff;
+    padding:30px 0;
+    .apps {
+        a {
+            text-align: center;
+            color:#fff;
+            &:not(:last-of-type) {
+                background-color: #fff;
+                color: $red_color;
+                padding: 15px;
+                border-radius: 23px;
+                display: block;
+                width: 75%;
+                font-size: 15px;
+                text-align: left ;
+                margin-bottom:10px;
+            }
+        }
+    }
+    .social {
+        li {
+            display: inline-block;
+            a {
+                color: #fff;
+                width: 40px;
+                height: 40px;
+                border: 1px solid #fff;
+                line-height: 40px;
+                border-radius: 50%;
+                margin-right: 5px;
+                text-align: center;
+                font-size:17px;
+                transition:all .5s ease-in-out;
+            }
+            .fa-facebook {
+                &:hover {
+                    background-color:#3b5998;
+                    color:#fff;
+                }
+            }
+            .fa-twitter {
+                &:hover {
+                    background-color:#1da1f2;
+                    color:#fff;
+                }
+            }
+            .fa-whatsapp {
+                &:hover {
+                    background-color:#4aae20;
+                    color:#fff;
+                }
+            }
+        }
+    }
+    .policy {
+        li {
+            margin-bottom:10px;
+            text-align: left;
+            a {
+                color:#fff !important;
+                font-size: 16px;
+
+            }
+        }
+        
+    }
+    .footer-logo {
+        display: inline-block;
+        color:#fff;
+        margin-bottom:40px;
+        position: relative;
+       h2 {
+           font-size:40px;
+           margin-top: 0;
+           margin-bottom: 0;
+       }
+       i {
+        font-size: 40px;
+        position: absolute;
+        top: 33px;
+        left: 10px;
+       }
+    }
+    p {
+        text-align: left;
+    }
+}

@@ -1,0 +1,26 @@
+/* Start Sign up Section */
+.login {
+    .media-list {
+        .media-left {
+            a {
+                span {
+                    width:35px;
+                    height:35px;
+                    border-radius:50%;
+                    background-color:$orange_color;
+                    display: inline-block;
+                }
+            }
+        }
+        .media-body {
+            a {
+                display: inline-block;
+                margin-top: 10px;
+                color:$red_color;
+            }
+        }
+    }
+}
+
+
+/* End Sign up Section */

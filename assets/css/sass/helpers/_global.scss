@@ -1,0 +1,13 @@
+a {
+    &:hover, &:focus {
+        text-decoration: none;
+        color:$orange_color
+    }
+}
+
+.left-line {
+    margin-bottom:30px;
+    color: $red_color;
+    border-left: 4px solid $red_color;
+    padding-left: 10px;
+}

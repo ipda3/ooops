@@ -1,0 +1,20 @@
+.main-btn {
+    background-color:#fff;
+    color:#FF3300;
+    display: inline-block;
+    width:100px;
+    text-align: center;
+    border-radius:20px;
+    padding:3px 5px;
+}
+.form_btn {
+    width:200px;
+    display: block;
+    margin:auto;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: none;
+    background-color:$red_color;
+    color:#fff;
+    border:1px solid $red_color
+}

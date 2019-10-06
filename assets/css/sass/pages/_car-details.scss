@@ -1,0 +1,144 @@
+/* Start Car Details Section */
+
+.car-details {
+    background-color:#eee;
+    padding:30px 0;
+    p {
+        margin-bottom: 50px;
+    }
+
+    /* Start Car Description */
+
+    .car-desc {
+        .slider {
+            max-height: 600px;
+            overflow: hidden;
+        }
+        .prop {
+            display: flex;
+            justify-content: space-around;
+            .report, .fav {
+                background-color: $red_color;
+                width:200px;
+                margin:auto;
+                color: #fff;
+                padding: 10px;
+                border-radius: 20px;
+                margin-top: 15px;
+                display: block;
+                h3{
+                    font-size:20px;
+                }
+            }
+            .fav {
+                background-color:$orange_color;
+            }
+        }
+        .Specifications {
+            .info {
+                margin-top: 30px;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 35px;
+                span {
+                    font-size:17px;
+                }
+            }
+            .details-title {
+                color:$red_color;
+                margin-top:40px;
+            }
+            textarea {
+                border:none;
+            }
+            .send-message {
+                width: 200px;
+                background-image:linear-gradient(to bottom, $red_color, $orange_color);
+                color: #fff;
+                padding: 15px;
+                border-radius: 30px;
+                margin-top: 25px;
+                margin: auto;
+                display: block;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    /* End Car Description */
+
+    /* Start Car Info */
+    .car-info {
+        .price, .message, .contact, .user-info, .advices {
+            width: 80%;
+            margin: auto;
+            display: block;
+            padding: 10px;
+            margin-bottom:20px;
+        }
+        .price {
+            background-color: #fff;
+            color: #d63031;
+            font-size: 30px;
+            border-radius: 10px;
+        }
+        .message, .contact {
+            font-size:22px;
+            color:#fff;
+            border-radius:25px;
+            
+        }
+        .message {
+            background-color:$red_color;
+        }
+        .contact {
+            background-color:$orange_color;
+        }
+        .user-info {
+            background-color: #fff;
+            color:$red_color;
+            display: block;
+            padding:10px 0;
+            border-radius:10px;
+            i{
+                font-size:20px;
+            }
+            h3 {
+                margin-top:0;
+                display: inline-block;
+                margin-left:10px;
+                margin-bottom:20px;
+            }
+            span {
+                color:#333;
+            }
+        }
+        .advices {
+            background-color: #333;
+            color: #fff;
+            padding:5px;
+            border-radius:15px;
+            h3 {
+                font-size:20px;
+                margin-bottom:22px;
+            }
+            ul {
+                text-align: left;
+                margin:15px;
+                li {
+                    color:#fff;
+                    font-size:16px;
+                    margin-bottom:20px;
+                    &:before{
+                        content:'\2022 \00A0';
+                        color:$orange_color;
+                        
+                    }
+                }
+            }
+        }
+    }
+    /* End Car Info */
+} 
+
+/* End Car Details Section */

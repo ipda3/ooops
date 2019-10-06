@@ -1,0 +1,42 @@
+/* Start AD Request Section */
+
+.ad-requset {
+    background-color:#eee;
+    padding:60px 0;
+    .ad-content {
+        label, input, textarea, Select {
+            display: block;
+            margin:20px 0;
+        }
+        input, textarea, Select {
+            border-radius: 20px;
+            border:none;
+        }
+        label {
+            font-size:20px;
+            color:$orange_color;
+            font-weight:normal;
+        }
+        .select-box {
+            position: relative;
+            i {
+                position: absolute;
+                top: 15px;
+                right: 17px;
+                color:$orange_color;
+            }
+            select {
+                -webkit-appearance: none;
+            }
+        }
+
+    }
+    .ad-img {
+        img{
+            width: 80%;
+            margin: auto;
+        }
+    }
+}
+
+/* End AD Request Section */

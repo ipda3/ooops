@@ -1,0 +1,14 @@
+@import 'sass/helpers/variables';
+@import 'sass/helpers/mixins';
+@import 'sass/components/buttons';
+@import 'sass/helpers/global';
+
+@import 'sass/layout/navbar';
+@import 'sass/pages/index';
+@import 'sass/pages/cars';
+@import 'sass/pages/car-details';
+@import 'sass/pages/login';
+@import 'sass/pages/sign_up';
+@import 'sass/pages/add-ad';
+@import 'sass/pages/confirm-ad';
+@import 'sass/layout/footer';

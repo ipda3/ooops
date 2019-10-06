@@ -1,0 +1,29 @@
+/* Start Confirm Ad Section */
+.ad-content {
+    .additions {
+        margin:50px 0;
+        color:$orange_color;
+        .addition-items {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom:20px;
+            color:$orange_color;
+            .item {
+                font-size:20px;
+                color:$orange_color;
+            }
+        }
+    }
+    .main-btn {
+        display: block;
+        width:50%;
+        margin:auto;
+        padding:13px;
+        background-image:linear-gradient(to bottom, $red_color, $orange_color);
+        color:#fff;
+        border-radius:30px; 
+    }
+}
+
+
+/* End Confirm Ad Section */

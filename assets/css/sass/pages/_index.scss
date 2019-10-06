@@ -1,0 +1,163 @@
+/*  Start Header Section */
+header {
+    background-image: linear-gradient(to right, $orange_color, $red_color);
+    color:#fff;
+    height:800px;
+    .addition-ad {
+        text-align: right;
+        margin-top:10px;
+        i {
+            margin-left:5px;
+        }
+    }
+    .header-content {
+        position: relative;
+        h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+        i {
+            position: absolute;
+            left:calc(50% - 60px);
+            font-size:50px
+        }
+    }
+}
+/*  End Header Section */
+
+/*  Start Search Section */
+
+.search {
+    .search-box {
+        background-image: linear-gradient(to right, $red_color, $orange_color);
+        color:#fff;
+        position: relative;
+        top: -40px;
+        padding: 35px;
+        form {
+            display: flex;
+            padding:15px;
+            input {
+                border-radius: 25px;
+                text-align: center;
+                margin-left:20px;
+                font-size:14px;
+                &:first-of-type {
+                    flex-shrink: 1.5;
+                }
+            }
+        }
+    }
+}
+
+/*  End Search Section */
+
+/*  Start Social Icons Section */
+
+.social-icons {
+    ul {
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom:30px;
+        li {
+            a {
+                width: 80px;
+                height: 80px;
+                color: #fff;
+                line-height: 80px;
+                border-radius: 50%;
+                font-size: 21px;
+            }
+            a.fa-facebook {
+                background-image:linear-gradient(to top, #444, $red_color); 
+            }
+            a.fa-twitter {
+                background-image:linear-gradient(to top, $orange_color, $red_color); 
+            }
+            a.fa-instagram {
+                background-image:linear-gradient(to top, #EEE, #16A9B7); 
+            }
+            a.fa-linkedin {
+                background-image:linear-gradient(to top, #444, $orange_color); 
+            }
+            a.fa-youtube {
+                background-image:linear-gradient(to top, #444, $red_color); 
+            }
+            a.fa-github {
+                background-image:linear-gradient(to top, $orange_color, $red_color); 
+            }
+        }
+    }
+ 
+}
+
+/*  End Social Icons Section */
+
+/*  Start Least Ads Section */
+.ads {
+    .box {
+        background-color: #EEE;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px 1px #CCC;
+        overflow: hidden;
+        .box-details {
+            padding:10px;
+            i {
+                color:$red_color;
+                padding-right:10px;
+            }
+        }
+        a {
+            width: 150px;
+            padding: 12px 20px;
+            display: block;
+            border-radius: 10px;
+            margin:auto;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+    }
+    a.read-more {
+        width: 180px;
+        background-image:linear-gradient(to top, $orange_color, $red_color);
+        margin: 50px 0;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 15px;
+        border-radius: 30px;
+        color: #fff;
+    }
+}
+/*  End Least Ads Section */
+
+/*  Start Subscripe Section */
+.subscripe {
+    background-color:#ff7f50;
+    color:#fff;
+    padding:40px 0;
+    h2 {
+        margin-bottom:40px;
+        font-size:30px;
+    }
+    form {
+        width: 60%;
+        margin: auto;
+        input[type="email"] {
+            border-radius: 30px;
+            padding: 27px 20px;
+            margin-bottom: 40px;
+        }
+        input[type="submit"] {
+            width: 190px;
+            padding: 15px;
+            border-radius: 30px;
+            border: none;
+        }
+        
+    }
+}
+/*  End Subscripe Section */
