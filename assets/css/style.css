@@ -18,6 +18,16 @@
   color: #fff;
   border: 1px solid #cf455c; }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  direction: rtl;
+  font-family: 'Cairo', sans-serif !important; }
+
 a:hover, a:focus {
   text-decoration: none;
   color: #f4855a; }
@@ -25,13 +35,15 @@ a:hover, a:focus {
 .left-line {
   margin-bottom: 30px;
   color: #cf455c;
-  border-left: 4px solid #cf455c;
-  padding-left: 10px; }
+  border-right: 4px solid #cf455c;
+  padding-right: 10px; }
 
 /*  Start Header Section */
 header {
-  background-image: linear-gradient(to right, #f4855a, #cf455c);
+  background-image: url("../../xd-Images/bg.png");
   color: #fff;
+  background-size: cover;
+  background-position: center;
   height: 800px; }
 header .addition-ad {
   text-align: right;
@@ -39,14 +51,16 @@ header .addition-ad {
 header .addition-ad i {
   margin-left: 5px; }
 header .header-content {
+  display: block;
   position: relative; }
-header .header-content h1 {
-  font-size: 60px;
-  margin: 0; }
-header .header-content i {
+header .header-content img:first-of-type {
+  max-width: 200px;
+  position: relative; }
+header .header-content img:last-of-type {
   position: absolute;
-  left: calc(50% - 60px);
-  font-size: 50px; }
+  right: 43%;
+  top: 95%;
+  width: 51px; }
 
 /*  End Header Section */
 /*  Start Search Section */
@@ -55,7 +69,7 @@ header .header-content i {
   color: #fff;
   position: relative;
   top: -40px;
-  padding: 35px; }
+  padding: 20px; }
 .search .search-box form {
   display: flex;
   padding: 15px; }
@@ -96,6 +110,8 @@ header .header-content i {
 
 /*  End Social Icons Section */
 /*  Start Least Ads Section */
+.ads h2 {
+  padding-right: 10px; }
 .ads .box {
   background-color: #EEE;
   margin-bottom: 20px;
@@ -106,7 +122,8 @@ header .header-content i {
   padding: 10px; }
 .ads .box .box-details i {
   color: #cf455c;
-  padding-right: 10px; }
+  padding-right: 10px;
+  padding-left: 10px; }
 .ads .box a {
   width: 150px;
   padding: 12px 20px;
@@ -163,11 +180,11 @@ header .header-content i {
 .options .select-box i {
   position: absolute;
   top: 15px;
-  right: 17px;
+  left: 17px;
   color: #f4855a; }
 .options .select-box select {
   -webkit-appearance: none;
-  color: #999; }
+  padding: 0 10px; }
 
 /* Pagination */
 .pages .pagination li a {
@@ -188,6 +205,8 @@ header .header-content i {
   /* End Car Description */
   /* Start Car Info */
   /* End Car Info */ }
+.car-details h2 {
+  padding-right: 10px; }
 .car-details p {
   margin-bottom: 50px; }
 .car-details .car-desc .slider {
@@ -214,8 +233,9 @@ header .header-content i {
   background-color: #fff;
   padding: 20px;
   border-radius: 35px; }
-.car-details .car-desc .Specifications .info span {
-  font-size: 17px; }
+.car-details .car-desc .Specifications .info textarea {
+  font-size: 17px;
+  width: 100%; }
 .car-details .car-desc .Specifications .details-title {
   color: #cf455c;
   margin-top: 40px; }
@@ -316,12 +336,15 @@ header .header-content i {
   box-shadow: none;
   border: 1px solid #cf455c;
   color: #fff !important; }
+.login .login-box .login-content ::placeholder {
+  color: #fff; }
 .login .login-box .security {
   margin: 20px 0; }
 .login .login-box .security a {
+  padding: 10px;
   color: #cf455c; }
 .login .login-box .security a:last-of-type {
-  float: right;
+  float: left;
   margin-right: 20px; }
 
 /* End Login Section */
@@ -331,7 +354,8 @@ header .header-content i {
   height: 35px;
   border-radius: 50%;
   background-color: #f4855a;
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 15px; }
 .login .media-list .media-body a {
   display: inline-block;
   margin-top: 10px;
@@ -357,10 +381,11 @@ header .header-content i {
 .ad-requset .ad-content .select-box i {
   position: absolute;
   top: 15px;
-  right: 17px;
+  left: 17px;
   color: #f4855a; }
 .ad-requset .ad-content .select-box select {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  padding: 0 10px; }
 .ad-requset .ad-img img {
   width: 80%;
   margin: auto; }
@@ -389,22 +414,24 @@ header .header-content i {
 
 /* End Confirm Ad Section */
 footer {
-  background-color: #d63031;
+  background-color: #cf455c;
   color: #fff;
   padding: 30px 0; }
-footer .apps a {
+footer .parent {
+  padding: 0; }
+footer .parent .apps {
+  padding: 0; }
+footer .parent .apps a {
   text-align: center;
   color: #fff; }
-footer .apps a:not(:last-of-type) {
+footer .parent .apps a:not(:last-of-type) {
   background-color: #fff;
   color: #cf455c;
-  padding: 15px;
+  padding: 15px 5px;
   border-radius: 23px;
   display: block;
-  width: 75%;
   font-size: 15px;
-  text-align: left;
-  margin-bottom: 10px; }
+  margin: 0 0 15px; }
 footer .social li {
   display: inline-block; }
 footer .social li a {
@@ -414,40 +441,42 @@ footer .social li a {
   border: 1px solid #fff;
   line-height: 40px;
   border-radius: 50%;
-  margin-right: 5px;
+  margin-right: 10px;
   text-align: center;
   font-size: 17px;
   transition: all .5s ease-in-out; }
 footer .social li .fa-facebook:hover {
   background-color: #3b5998;
+  border: 1px solid #3b5998;
   color: #fff; }
 footer .social li .fa-twitter:hover {
   background-color: #1da1f2;
+  border: 1px solid #1da1f2;
   color: #fff; }
 footer .social li .fa-whatsapp:hover {
   background-color: #4aae20;
+  border: 1px solid #4aae20;
   color: #fff; }
 footer .policy li {
-  margin-bottom: 10px;
-  text-align: left; }
+  margin-bottom: 15px;
+  text-align: right; }
 footer .policy li a {
   color: #fff !important;
-  font-size: 16px; }
-footer .footer-logo {
-  display: inline-block;
-  color: #fff;
-  margin-bottom: 40px;
-  position: relative; }
-footer .footer-logo h2 {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 0; }
-footer .footer-logo i {
-  font-size: 40px;
+  font-size: 14px; }
+footer .footer-content {
+  display: block;
+  position: relative;
+  margin-bottom: 20px; }
+footer .footer-content img:first-of-type {
+  max-width: 200px;
+  position: relative;
+  top: -22px; }
+footer .footer-content img:last-of-type {
   position: absolute;
-  top: 33px;
-  left: 10px; }
+  right: 7%;
+  top: 60%;
+  width: 40px; }
 footer p {
-  text-align: left; }
+  text-align: right; }
 
 /*# sourceMappingURL=style.css.map */

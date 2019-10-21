@@ -1,7 +1,9 @@
 /*  Start Header Section */
 header {
-    background-image: linear-gradient(to right, $orange_color, $red_color);
+    background-image: url('../../../xd-Images/bg.png');
     color:#fff;
+    background-size: cover;;
+    background-position: center;
     height:800px;
     .addition-ad {
         text-align: right;
@@ -11,15 +13,19 @@ header {
         }
     }
     .header-content {
+        display: block;
         position: relative;
-        h1 {
-            font-size: 60px;
-            margin: 0;
-        }
-        i {
-            position: absolute;
-            left:calc(50% - 60px);
-            font-size:50px
+        img {
+            &:first-of-type {
+                max-width:200px;
+                position: relative;
+            }
+            &:last-of-type {
+                position: absolute;
+                right: 43%;
+                top: 95%;
+                width: 51px;            
+            }
         }
     }
 }
@@ -33,7 +39,7 @@ header {
         color:#fff;
         position: relative;
         top: -40px;
-        padding: 35px;
+        padding: 20px;
         form {
             display: flex;
             padding:15px;
@@ -96,6 +102,7 @@ header {
 
 /*  Start Least Ads Section */
 .ads {
+    h2{padding-right:10px}
     .box {
         background-color: #EEE;
         margin-bottom: 20px;
@@ -107,6 +114,7 @@ header {
             i {
                 color:$red_color;
                 padding-right:10px;
+                padding-left:10px;
             }
         }
         a {

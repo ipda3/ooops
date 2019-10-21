@@ -3,6 +3,9 @@
 .car-details {
     background-color:#eee;
     padding:30px 0;
+    h2 {
+        padding-right:10px;
+    }
     p {
         margin-bottom: 50px;
     }
@@ -40,8 +43,9 @@
                 background-color: #fff;
                 padding: 20px;
                 border-radius: 35px;
-                span {
+                textarea {
                     font-size:17px;
+                    width:100%;
                 }
             }
             .details-title {

@@ -33,13 +33,17 @@
                 border:1px solid $red_color;
                 color:#fff !important;
             }
+            ::placeholder {
+                color:#fff;
+            }
         }
         .security {      
             margin:20px 0;
             a {
+                padding:10px;
                 color:$red_color;
                 &:last-of-type{
-                    float: right;
+                    float: left;
                     margin-right: 20px;
                 }
             }

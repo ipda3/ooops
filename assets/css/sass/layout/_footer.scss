@@ -1,24 +1,28 @@
 footer {
-    background-color:#d63031;
+    background-color:$red_color;
     color:#fff;
     padding:30px 0;
-    .apps {
-        a {
-            text-align: center;
-            color:#fff;
-            &:not(:last-of-type) {
-                background-color: #fff;
-                color: $red_color;
-                padding: 15px;
-                border-radius: 23px;
-                display: block;
-                width: 75%;
-                font-size: 15px;
-                text-align: left ;
-                margin-bottom:10px;
+    .parent {
+        padding:0;
+        .apps {
+            padding:0;
+            a {
+                text-align: center;
+                color:#fff;
+                &:not(:last-of-type) {
+                    background-color: #fff;
+                    color: $red_color;
+                    padding: 15px 5px;
+                    border-radius: 23px;
+                    display: block;
+                    font-size: 15px;
+                    margin: 0 0 15px;
+                    
+                }
             }
         }
     }
+
     .social {
         li {
             display: inline-block;
@@ -29,7 +33,7 @@ footer {
                 border: 1px solid #fff;
                 line-height: 40px;
                 border-radius: 50%;
-                margin-right: 5px;
+                margin-right: 10px;
                 text-align: center;
                 font-size:17px;
                 transition:all .5s ease-in-out;
@@ -37,18 +41,21 @@ footer {
             .fa-facebook {
                 &:hover {
                     background-color:#3b5998;
+                    border:1px solid #3b5998;
                     color:#fff;
                 }
             }
             .fa-twitter {
                 &:hover {
                     background-color:#1da1f2;
+                    border:1px solid #1da1f2;
                     color:#fff;
                 }
             }
             .fa-whatsapp {
                 &:hover {
                     background-color:#4aae20;
+                    border:1px solid #4aae20;
                     color:#fff;
                 }
             }
@@ -56,34 +63,38 @@ footer {
     }
     .policy {
         li {
-            margin-bottom:10px;
-            text-align: left;
+            margin-bottom:15px;
+            text-align: right;
             a {
                 color:#fff !important;
-                font-size: 16px;
+                font-size: 14px;
 
             }
         }
         
     }
-    .footer-logo {
-        display: inline-block;
-        color:#fff;
-        margin-bottom:40px;
+    .footer-content {
+        display: block;
         position: relative;
-       h2 {
-           font-size:40px;
-           margin-top: 0;
-           margin-bottom: 0;
-       }
-       i {
-        font-size: 40px;
-        position: absolute;
-        top: 33px;
-        left: 10px;
-       }
+        margin-bottom:20px;
+        
+        img {
+            &:first-of-type {
+                max-width:200px;
+                position: relative;
+                top: -22px;
+            }
+            &:last-of-type {
+                position: absolute;
+                right: 7%;
+                top: 60%;
+                width: 40px          
+            }
+        }
     }
+
     p {
-        text-align: left;
+        
+        text-align: right;
     }
 }

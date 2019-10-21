@@ -11,6 +11,7 @@
         input, textarea, Select {
             border-radius: 20px;
             border:none;
+            
         }
         label {
             font-size:20px;
@@ -22,11 +23,12 @@
             i {
                 position: absolute;
                 top: 15px;
-                right: 17px;
+                left: 17px;
                 color:$orange_color;
             }
             select {
                 -webkit-appearance: none;
+                padding: 0 10px;
             }
         }
 
